@@ -23,10 +23,10 @@ No build step, no platform fees, no outside services. Works on GitHub Pages as-i
 
 ## Put it online (GitHub Pages, free)
 
-1. On GitHub (account `natsukuco`), create a repository named exactly **`natsukuco.github.io`**.
+1. On GitHub (account `natsukuco`), the site lives in the repository **`website`**.
 2. Upload everything in this folder to the repository root. The web uploader takes about 100 files per commit, so upload `assets/img` in two or three goes, or use GitHub Desktop and push once.
 3. Repository → **Settings → Pages** → Source: *Deploy from a branch*, Branch: `main`, folder `/ (root)`.
-4. After a minute the site is live at **https://natsukuco.github.io/**. Your rate cards keep working at their current addresses.
+4. After a minute the site is live at **https://natsukuco.github.io/website/**. Your rate cards keep working at their current addresses.
 
 ## Using natsuku.co later
 
@@ -35,7 +35,7 @@ No build step, no platform fees, no outside services. Works on GitHub Pages as-i
 1. Settings → Pages → Custom domain: `natsuku.co`. GitHub adds a `CNAME` file for you.
 2. At your domain registrar, add four `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, plus a `CNAME` record for `www` pointing to `natsukuco.github.io`.
 3. Tick **Enforce HTTPS** once it's available.
-4. Find and replace `https://natsukuco.github.io/` with `https://natsuku.co/` in all `.html` files (these are the share-preview links).
+4. Find and replace `https://natsukuco.github.io/website/` with `https://natsuku.co/` in all `.html` files (these are the share-preview links), and `/website/` with `/` in `404.html`.
 
 ## Common edits
 
